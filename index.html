@@ -397,6 +397,7 @@
 <!-- Футер -->
     <footer class="footer">
         <div class="container flex">
+            
             <div class="logotype">
                 <a class="logo-footer" href="./index.html">Web<span class="logo-title-footer">Studio</span></a> 
                 <address class="address">
@@ -407,7 +408,7 @@
                     </ul>
                 </address>
             </div>
-            
+
             <div class="network-address">
                 <h2 class="slogan">присоединяйтесь</h2>
                 <ul class="network-list">
@@ -446,17 +447,14 @@
             </div>
 
             <div class="form-foter">
-                <form class="contact-form" name="contact-form" method="post">
-                
                     <b class="form-title">Подпишитесь на рассылку</b>
-                
-                    <div class="email-input">
-                        <label class="label-field">
-                            <input type="email" name="email" placeholder="E-mail">
-                        </label>
-                    </div>
-                
-                    <button type="submit">Подписаться</button>
+                <form class="contact-form" name="contact-form">
+                    <input class="email-input" type="email" name="email" id="email" placeholder="E-mail">
+                    <button class="btn-subscribe" type="submit">Подписаться
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./img-studio/sprite-modal.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
             

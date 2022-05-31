@@ -45,6 +45,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+input {
+  margin: 0;
+  padding: 0;
+}
 /* Шапка сайта */
 
 .container {
@@ -502,14 +506,14 @@ img {
 /* Футер */
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .flex {
   display: flex;
 }
 .logotype {
   display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   display: block;
@@ -559,9 +563,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .network-address {
+  display: block;
   margin-left: 70px;
-  width: 206px;
-  height: 80px;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 .slogan {
   margin-bottom: 20px;
@@ -602,24 +607,83 @@ img {
 }
 /* Форма */
 .form-foter {
-  width: 570px;
-  height: 86px;
-  outline: 1px solid white;
+  display: block;
   margin-left: 93px;
+  padding-top: 72px;
+  padding-bottom: 94px;
 }
-.contact-form {
-  display: flex;
-}
+
 .form-title {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
+
   color: #ffffff;
 }
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+.email-input {
+  display: inline-block;
+  width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
 
-/* Модальное окно */
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  background-color: transparent;
+  outline: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.email-input:hover,
+.email-input:focus {
+  border: 1px solid var(--accent-color);
+}
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+}
+.icon-send {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+/* Модальное окно
+.btn-subscribe::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../img-studio/icons/icon-send.svg);
+  background-size: contain;
+}
+*/
 
 .modal-wrapper {
   position: absolute;
