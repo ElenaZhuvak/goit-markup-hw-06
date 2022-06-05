@@ -49,6 +49,10 @@ input {
   margin: 0;
   padding: 0;
 }
+textarea {
+  resize: none;
+}
+
 /* Шапка сайта */
 
 .container {
@@ -658,6 +662,7 @@ input {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   color: #ffffff;
 
@@ -667,23 +672,13 @@ input {
 
   background-color: var(--accent-color);
 }
+
 .icon-send {
   fill: #ffffff;
   margin-left: 10px;
 }
-/* Модальное окно
-.btn-subscribe::after {
-  position: absolute;
-  content: '';
-  display: inline-block;
 
-  width: 24px;
-  height: 24px;
-
-  background-image: url(../img-studio/icons/icon-send.svg);
-  background-size: contain;
-}
-*/
+/* Модальное окно */
 
 .modal-wrapper {
   position: absolute;
@@ -704,7 +699,7 @@ input {
   animation-direction: alternate;
   animation-delay: 250ms;
 }
-@keyframes changeBgColor {
+/* @keyframes changeBgColor {
   0% {
     background-color: rgb(255, 255, 255);
   }
@@ -716,7 +711,7 @@ input {
   100% {
     background-color: rgb(170, 241, 238);
   }
-}
+} */
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -735,7 +730,72 @@ input {
   border-radius: 50%;
   background-color: transparent;
 }
+.icon-close {
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+.icon-close:hover,
+.icon-close:focus {
+  fill: var(--accent-color);
+}
 
+/* Форма в модальном окне */
+.form-title-modal {
+  display: block;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 40px;
+  margin-left: 41px;
+  margin-right: 39px;
+
+  color: var(--title-text-color);
+}
+.modal-form {
+  display: block;
+
+  margin-top: 12px;
+  margin-left: 41px;
+  margin-right: 39px;
+}
+.form-modal-group {
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+}
+}
+.form-modal-input {
+  width: 100%;
+  padding: 11px 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+}
+.btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: #ffffff;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* Кнопки фильтра портфолио */
 
 .button-filter {
