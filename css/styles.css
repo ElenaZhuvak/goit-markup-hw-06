@@ -774,6 +774,7 @@ textarea {
 }
 .form-modal-label {
   display: block;
+  text-align: start;
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -803,6 +804,8 @@ textarea {
   position: absolute;
   bottom: 11px;
   left: 12px;
+
+  transition: var(--transition-duration) var(--transition-timing-function);
 }
 
 .form-modal-input:focus + .form-modal-icon {
@@ -831,11 +834,45 @@ textarea {
   opacity: 0.5;
 }
 
+/* Чекбокс */
 .form-policy-group {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 7px;
+
+  border-radius: 4px;
+  outline: 2px solid var(--title-text-color);
+  outline-offset: -2px;
+}
+.custom-checkbox-icon {
+  opacity: 0;
+
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+.checkbox:checked + .custom-checkbox .custom-checkbox-icon {
+  opacity: 1;
+  fill: #ffffff;
+}
+.checkbox:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+}
+.form-policy-desc {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.form-policy-link {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .btn {
