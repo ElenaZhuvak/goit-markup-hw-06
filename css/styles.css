@@ -793,6 +793,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   outline: transparent;
+
   transition: var(--transition-duration) var(--transition-timing-function);
 }
 .form-modal-input:hover,
@@ -848,14 +849,14 @@ textarea {
 
   margin-right: 7px;
 
-  border-radius: 4px;
+  border-radius: 2px;
   outline: 2px solid var(--title-text-color);
   outline-offset: -2px;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .custom-checkbox-icon {
   opacity: 0;
-
-  transition: var(--transition-duration) var(--transition-timing-function);
 }
 .checkbox:checked + .custom-checkbox .custom-checkbox-icon {
   opacity: 1;
@@ -863,6 +864,11 @@ textarea {
 }
 .checkbox:checked + .custom-checkbox {
   background-color: var(--accent-color);
+  outline: var(--accent-color);
+  transition: var(--transition-duration) var(--transition-timing-function);
+}
+.custom-checkbox:focus {
+  outline: var(--accent-color);
 }
 .form-policy-desc {
   display: flex;
@@ -872,6 +878,7 @@ textarea {
 }
 .form-policy-link {
   text-decoration: underline;
+  margin-left: 3px;
   color: var(--accent-color);
 }
 
