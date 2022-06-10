@@ -662,6 +662,7 @@ textarea {
   justify-content: center;
 
   text-align: center;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -786,7 +787,9 @@ textarea {
 }
 
 .form-modal-input {
+  position: relative;
   width: 100%;
+  height: 40px;
   padding: 11px 12px 11px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -804,6 +807,9 @@ textarea {
 .form-modal-icon {
   position: absolute;
   bottom: 11px;
+  left: 12px;
+
+  top: 50%;
   left: 12px;
 
   transition: var(--transition-duration) var(--transition-timing-function);
@@ -886,6 +892,7 @@ textarea {
   display: block;
   margin: 0 auto;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
