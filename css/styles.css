@@ -66,7 +66,7 @@ textarea {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -81,7 +81,7 @@ textarea {
 
   color: var(--accent-color);
 }
-.logo-title {
+.logo__title {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.2;
@@ -89,20 +89,17 @@ textarea {
 
   color: #000000;
 }
-.navigation-links {
+.navigation__list {
   display: flex;
   align-items: center;
 }
-.site-nav {
+.navigation__item {
   margin-right: 50px;
 }
-.site-nav:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }
-.site-contact {
-  display: flex;
-}
-.link-nav {
+.navigation__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -117,17 +114,17 @@ textarea {
 
   color: var(--title-text-color);
 }
-.link-nav.current {
+.navigation__link.current {
   color: var(--accent-color);
 }
-.link-nav:hover,
-.link-nav:focus,
-.link-nav.current:focus,
-.link-nav.current:active {
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link.current:focus,
+.navigation__link.current:active {
   color: var(--accent-color);
 }
 
-.link-nav.current::after {
+.navigation__link.current::after {
   position: absolute;
   display: block;
   content: '';
@@ -140,18 +137,19 @@ textarea {
   border-radius: 2px;
 }
 
-.contact-box {
+.contact__list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.site-contact {
+.contact__item {
+  display: flex;
   margin-right: 50px;
 }
-.site-contact:last-child {
+.contact__item:last-child {
   margin-right: 0;
 }
-.contact-nav {
+.contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,19 +164,19 @@ textarea {
 
   color: var(--primary-text-color);
 }
-.contact-nav:hover,
-.contact-nav:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
-.contact-icon {
+.contact__icon {
   display: inline-block;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.contact-nav:hover .contact-icon,
-.contact-nav:focus .contact-icon {
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon {
   fill: var(--accent-color);
 }
 
@@ -538,7 +536,7 @@ textarea {
   width: 231px;
   height: 81px;
 }
-.logo-title-footer {
+.logo__title-footer {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.2;
